@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Выбор фигуры"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="234dp"
+            android:layout_height="244dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circle">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:gravity="center">
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:background="#a6a6a6"
+            android:gravity="center"
+            android:hint="Выберите фигуру"
+            android:textSize="20sp"
+            android:entries="@array/figure"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/editTextNums"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:background="#a6a6a6"
+            android:gravity="center"
+            android:hint="Введите данные для расчёта"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="Выполнить расчёт"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,TextContrastCheck"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>

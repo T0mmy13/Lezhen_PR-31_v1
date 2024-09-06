@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lezhen-PR-31_v</string>
+    <string-array name="figure">
+        <item>Треугольник</item>
+        <item>Круг</item>
+    </string-array>
+</resources>
