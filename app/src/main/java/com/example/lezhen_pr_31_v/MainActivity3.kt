@@ -79,7 +79,7 @@ class MainActivity3 : AppCompatActivity() {
                 SafeAndStart(selectedItem, "${(Nums.text.toString()).toInt() / 2*Math.PI}")
             }
             else if (selectedItem == "Прямоугольник" && FindTwoNums(Nums.text.toString()) != null){
-                SafeAndStart(selectedItem, "${(Nums.text.toString()).toInt() * 2}")
+                SafeAndStart(selectedItem, "${FindTwoNums(Nums.text.toString())?.sum()?.times(2)}")
             }
             else{
                 Toast.makeText(this, "Вы некорректно ввели данные", Toast.LENGTH_SHORT).show()
